@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: gini-server
+    runtime: node
+    buildCommand: npm install && pip install yt-dlp
+    startCommand: node index.js
